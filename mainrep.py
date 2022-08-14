@@ -1,7 +1,7 @@
 import threading
 from time import sleep
 
-#функции, запущеные впаралель через threading
+#функции, запущеные впаралель через threading.
 
 def func1( a):
     while a > 0:
