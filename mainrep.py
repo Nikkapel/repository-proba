@@ -1,7 +1,8 @@
 import threading
 from time import sleep
-'''
-#функцииБ запущеные впаралель через threading
+
+#функции, запущеные впаралель через threading
+
 def func1( a):
     while a > 0:
         sleep(0.5)
@@ -46,6 +47,7 @@ f4.start()
 f5.start()
 
 '''
+# решение с помощью asyncio:
 
 import asyncio
 async def func1(a):
@@ -83,7 +85,7 @@ loop = asyncio.get_event_loop()
 loop.create_task(main())
 loop.run_forever()
 
-
+'''
 
 
 
